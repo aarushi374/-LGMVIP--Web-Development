@@ -642,7 +642,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media only screen and (min-device-width: 480px) {
+@media screen and (max-width: 780px) {
   .text {
     font-size: 11px
   }
