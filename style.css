@@ -642,11 +642,9 @@ html {
   scroll-behavior: smooth;
 }
 
-<<<<<<< HEAD
+
 @media screen and (max-width: 780px) {
-=======
-@media only screen and (max-width:300px) {
->>>>>>> 83c1be71ecc8cd96f23555376b3b22a3725ebcb9
+ {
   .text {
     font-size: 11px
   }
