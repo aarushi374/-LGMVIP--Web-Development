@@ -1,0 +1,720 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  height: 650px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Caption text image slideshow*/
+.text {
+  width: 35%;
+  position: absolute;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  padding-left: 5%;
+  bottom: 10%;
+}
+
+.text1 {
+  font-size: 80px;
+  color: #ff751a;
+  margin: 0px;
+  font-style: italic;
+  font-width: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/*box text pet text*/
+.text2, .txt1, .pet_name {
+  font-size: 30px;
+  color: #ff751a;
+  margin: 0px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.pets_txt, .view_pets {
+  margin-left: 4%;
+  margin-bottom: 2%;
+  color: #ff751a;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.pets_txt {
+  font-size: 23px;
+}
+
+.view_pets {
+  float: left;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 2%;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.intro, .txt2 {
+  font-style: normal;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.txt2 {
+  margin: 3%;
+  font-size: 20px;
+}
+
+.txt3, .text_adopt, .pet_info {
+  font-size: 18px;
+  font-style: normal;
+  font-family: sans-serif;
+}
+
+.text_adopt {
+  color: white;
+  margin: 4%;
+}
+
+.txt1, .txt3 {
+  margin: 2%;
+}
+
+.pet_name, .pet_info {
+  margin-top: 4%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.intro {
+  width: 50%;
+  float: left;
+  padding-left: 10%;
+  font-size: 20px;
+}
+
+/*quote text*/
+.qtxt {
+  font-size: 20px;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: sans-serif;
+}
+
+.qname {
+  font-style: oblique;
+  float: right;
+  font-weight: bold;
+  margin-right: 17%;
+  margin-bottom: 10%;
+}
+
+/*text animation*/
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* The dots */
+.dot, .dot_video {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot_video {
+  cursor: pointer;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.dotdiv {
+  width: 100px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.dotdiv2 {
+  margin-top: 2%;
+}
+
+.active_video, .dot_video:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.fade_video {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smallers, decrease text size */
+/*nav bar*/
+.nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  /*background:#ff8c1a;*/
+}
+
+.title {
+  color: #ff751a;
+  font-size: 25px;
+  padding: 16px 20px;
+  position: relative;
+  top: 0;
+  float: left;
+  font-weight: bold;
+  margin: 0px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  font-style: normal;
+}
+
+.nav_a {
+  color: #ff751a;
+  float: right;
+  display: block;
+  padding: 16px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  font-style: normal;
+}
+
+a:hover {
+  /*text-decoration:underline;*/
+  background: #e67300;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
+}
+
+/*headers*/
+.welcome, .head_adopt, .pets, .video_txt, .quote_heading, .shelter_txt, .ask_us {
+  font-style: normal;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+.fq, .contact_heading {
+  font-style: normal;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.contact_heading {
+  color: white;
+}
+
+.small {
+  color: #ff751a;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+details {
+  margin: 5%;
+}
+
+summary, label {
+  color: #cc6600;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.contact_txt {
+  color: white;
+  text-align: center;
+  margin: 4%;
+  font-style: normal;
+  font-size: 15px;
+}
+
+label {
+  margin-left: 20%;
+}
+
+.summary {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/*inputs*/
+.input_text, .input_text_message, .news_input {
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding: 12px 20px;
+}
+
+.input_text, .input_text_message {
+  width: 60%;
+}
+
+.welcome {
+  padding-top: 2%;
+}
+
+.video_txt {
+  padding: none;
+  margin: none;
+  color: white;
+}
+
+.head_adopt, .shelter_txt {
+  color: white;
+  padding-top: 2%;
+}
+
+.heading {
+  text-align: center;
+}
+
+.boxes {
+  text-align: center;
+}
+
+.paw {
+  height: 150px;
+}
+
+.para1, .para2, .para3 {
+  width: 30%;
+}
+
+.para1 {
+  float: left;
+  clear: left;
+  margin-left: 3%;
+}
+
+.para2 {
+  float: left;
+  margin-left: 3%;
+}
+
+.para3 {
+  float: right;
+  margin-left: 3%;
+  margin-right: 1%;
+}
+
+.home {
+  width: 50%;
+  height: 620px;
+  margin-left: 25%;
+  box-shadow: 5px 10px 18px #888888;
+  margin-top: 8%;
+}
+
+/*buttons*/
+.wel_btn, .adopt_btn, .btn_submit, .btn_subscribe {
+  color: white;
+  background-color: #ff751a;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  font-family: Roboto;
+}
+
+.wel_btn {
+  margin: 4%;
+  padding: 3%;
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.btn_subscribe {
+  padding: 3%;
+  margin: 30px auto;
+  display: block;
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.adopt_btn {
+  margin-left: 35%;
+  margin-top: 6%;
+  width: 110px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+.btn_submit {
+  margin-left: 20%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  width: 60%;
+  height: 40px;
+  border-radius: 3px;
+}
+
+.wel_btn:hover, .adopt_btn:hover, .btn_submit:hover, .btn_subscribe:hover {
+  background: #cc6600;
+}
+
+.img_adopt {
+  weight: 180px;
+  height: 180px;
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+}
+
+.adopt {
+  margin-top: 10%;
+  width: 100%;
+  height: 500px;
+  background-color: #cc6600;
+}
+
+.adopt1, .foster, .donate, .volunteer {
+  width: 25%;
+  height: 500px;
+}
+
+.adopt1, .foster, .donate {
+  float: left;
+}
+
+.volunteer {
+  float: right;
+}
+
+.ourpet_img {
+  height: 250px;
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+}
+
+.alex, .bobo, .milky, .tan {
+  width: 25%;
+  height: 430px;
+}
+
+.alex, .bobo, .milky {
+  float: left;
+}
+
+.tan {
+  float: right;
+}
+
+.myVideos {
+  display: none
+}
+
+iframe {
+  padding-top: 2%;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+/* Slideshow container */
+.video-container {
+  width: 100%;
+  height: 650px;
+  position: relative;
+  margin-top: 10%;
+  background-color: #cc6600;
+  float: left;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.quotes {
+  margin-top: 3%;
+  float: left;
+  width: 100%;
+}
+
+/* Caption text */
+.text_video {
+  color: white;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  font-style: normal;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  margin-top: 2%;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.quote1, .quote2 {
+  float: left;
+  width: 50%;
+}
+
+.quote3, .quote4 {
+  float: right;
+  width: 50%;
+}
+
+.shelters {
+  float: left;
+  width: 100%;
+  height: 700px;
+  background-color: #cc6600;
+  margin-top: 5%;
+}
+
+.faq {
+  float: left;
+  width: 100%;
+  height: 800px;
+  margin-top: 5%;
+}
+
+.questions {
+  float: left;
+  width: 43%;
+  margin-left: 5%;
+  border-radius: 5px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.message {
+  margin-right: 5%;
+  float: right;
+  width: 43%;
+  border-radius: 10px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.contact {
+  margin-top: 10%;
+  float: left;
+  background-color: #cc6600;
+  width: 100%;
+}
+
+.contact_para {
+  float: left;
+  width: 20%;
+}
+
+.contact_para_right {
+  float: right;
+  width: 20%;
+}
+
+.fa {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+}
+
+.fa:hover {
+  color: #ff751a;
+}
+
+.our_pets {
+  margin-top: 5%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 780px) {
+  .text {
+    font-size: 11px
+  }
+
+  .nav_a {
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+
+  .intro {
+    padding-left: 5%;
+    font-size: 15px;
+  }
+
+  .paw, {
+    height: 100px;
+    width: 100px;
+  }
+
+  .ourpet_img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .home {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .questions, .message {
+    margin-left: 0;
+    margin-right: 0;
+    width: 50%;
+    box-shadow: none;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .img_adopt {
+    width: 100px;
+    height: 100px;
+  }
+
+  .fa, .welcome, .head_adopt, .pets, .video_txt, .quote_heading, .shelter_txt, .ask_us, .txt1, .txt2, .txt3, .prev, .next, .text_video, .pet_name {
+    font-size: 20px;
+  }
+
+  .text_adopt, .pets_txt, .pet_info, .view_pets, .qtxt, .contact_heading {
+    font-size: 15px;
+  }
+
+  .contact_txt {
+    font-size: 12px;
+  }
+
+  .adopt_btn {
+    width: 80px;
+    height: 40px;
+    margin-left: 4%;
+  }
+
+  .contact_para_right {
+    float: none;
+    position: relative;
+    margin-left: 30%;
+    margin-top: 3%;
+  }
+
+  .contact_para {
+    width: 25%;
+  }
+}
