@@ -717,11 +717,17 @@ html {
   .contact_para {
     width: 25%;
   }
-  iframe{
+
+  iframe {
     width: 400px;
-    height:500px;
+    height: 500px;
   }
-.shelters{
-  height:600px;
-}
+
+  .shelters {
+    height: 600px;
+  }
+
+  .dotdiv {
+    bottom: 40%;
+  }
 }
