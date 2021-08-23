@@ -1,2 +1,3 @@
-# LGMVIP-Web-Development-Task-1
-WebSite Demo:https://aarushi374.github.io/LGMVIP-Web-Development-Task-1/
+# PetLand
+It is a single web page I made as a beginner to HTML, CSS, Javascript
+WebSite Demo:https://aarushi374.github.io/PetLand/
